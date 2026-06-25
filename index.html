@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maneesh Kumar Jatav | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #0f172a; /* Slate 900 */
+            --accent-color: #0284c7; /* Sky 600 */
+            --text-color: #334155; /* Slate 700 */
+            --bg-color: #f8fafc; /* Slate 50 */
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            letter-spacing: -0.05em;
+        }
+
+        header p {
+            margin: 5px 0 15px 0;
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+        }
+
+        .contact-info a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skills-category {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .skills-category strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .item-header h3 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .item-header h4 {
+            margin: 0;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .date {
+            color: #64748b;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        ul {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .soft-skills p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 15px auto; }
+            header { padding: 25px 15px; }
+            .item-header { flex-direction: column; }
+            .date { margin-top: 3px; margin-bottom: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header>
+            <h1>Maneesh Kumar Jatav</h1>
+            <p>Computer Science & Engineering Graduate</p>
+            <div class="contact-info">
+                <span>📍 Jaipur, Rajasthan, 302015</span>
+                <span>📞 +91 7023037548</span>
+                <span>📧 <a href="mailto:maneeshbhandari02@gmail.com">maneeshbhandari02@gmail.com</a></span>
+                <span>💼 <a href="https://linkedin.com/in/iammaneesh" target="_blank">linkedin.com/in/iammaneesh</a></span>
+            </div>
+        </header>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>🎓 Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <h3>Global Institute of Technology, Jaipur</h3>
+                    <span class="date">2021 - 2025</span>
+                </div>
+                <p style="margin: 0;">Bachelor of Technology (B.Tech) - Computer Science & Engineering</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <h3>Bhaskar Vidhya Mandir Sr. Sec. School, Nadbai (Bharatpur)</h3>
+                    <span class="date">2018 - 2019</span>
+                </div>
+                <p style="margin: 0;">12th Grade (Science Stream)</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <h3>Maharshi Dayanand Sr. Sec. School, Jahanpur (Bharatpur)</h3>
+                    <span class="date">2015 - 2016</span>
+                </div>
+                <p style="margin: 0;">10th Grade</p>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section id="skills">
+            <h2>🛠️ Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <strong>Languages</strong>
+                    Python, C++
+                </div>
+                <div class="skills-category">
+                    <strong>Frontend Development</strong>
+                    HTML, CSS, JavaScript, React.js, Angular
+                </div>
+                <div class="skills-category">
+                    <strong>Backend Development</strong>
+                    Node.js (Express.js), PHP
+                </div>
+                <div class="skills-category">
+                    <strong>Databases</strong>
+                    SQL, MongoDB
+                </div>
+                <div class="skills-category">
+                    <strong>Tools & Platforms</strong>
+                    Git, GitHub, VS Code
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <h2>💼 Professional Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <h3>Zidio Development</h3>
+                    <span class="date">Jun 2025 - Aug 2025</span>
+                </div>
+                <h4>Web Developer Intern</h4>
+                <ul>
+                    <li>Built and optimized responsive, user-friendly web interfaces using HTML, CSS, and React.js.</li>
+                    <li>Resolved layout and front-end performance issues to improve general UI responsiveness.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <h3>Upskill Campus</h3>
+                    <span class="date">Jul 2023 - Aug 2023</span>
+                </div>
+                <h4>Data Science & Machine Learning Trainee</h4>
+                <ul>
+                    <li>Utilized Python and machine learning algorithms to preprocess historical datasets and build robust predictive models.</li>
+                    <li>Transformed complex, unstructured raw data into clean formats for algorithmic pattern analysis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>💻 Projects</h2>
+            <div class="item">
+                <div class="item-header">
+                    <h3>Excel Analytics Platform</h3>
+                </div>
+                <ul>
+                    <li>Developed a full-stack data analytics platform equipped with interactive charts and dynamic performance graphs.</li>
+                    <li>Integrated custom, secure dashboards to facilitate seamless spreadsheet uploads, parsing, and analytical visualizations.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <h3>Blogging Platform</h3>
+                </div>
+                <ul>
+                    <li>Engineered a fully responsive full-stack platform utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+                    <li>Implemented secure user registration and login utilizing JSON Web Tokens (JWT), alongside custom profile management and an administrator control panel.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications">
+            <h2>📜 Certifications</h2>
+            <ul>
+                <li>Certificate of Participation - ICAT</li>
+                <li>Python for Data Science - Global Institute of Technology, Jaipur</li>
+            </ul>
+        </section>
+
+        <!-- SOFT SKILLS -->
+        <section id="soft-skills">
+            <h2>🎯 Key Soft Skills</h2>
+            <div class="soft-skills">
+                <p><strong>Problem-Solving:</strong> Strong diagnostic skills, demonstrated by resolving front-end layout bugs and optimizing logic.</p>
+                <p><strong>Teamwork:</strong> Highly collaborative approach, successfully coordinating with peer developers and technical mentors.</p>
+                <p><strong>Communication:</strong> Confident in delivering ideas during team stand-ups, technical documentation drafting, and presentation environments.</p>
+            </div>
+        </section>
+
+        <!-- ADDITIONAL INFORMATION -->
+        <section id="additional">
+            <h2>💡 Additional Information</h2>
+            <ul>
+                <li><strong>Languages:</strong> Hindi (Native), English (Professional), Punjabi (Conversational)</li>
+                <li><strong>Interests & Hobbies:</strong> Reading books (enhances vocabulary and creative perspectives); Playing Cricket (fosters exceptional concentration, discipline, and team dynamics)</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
