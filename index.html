@@ -32,7 +32,7 @@
             overflow-x: hidden;
         }
 
-        /* Abstract Geometric Background Design from 17053.jpg */
+        /* Abstract Geometric Background Design */
         .bg-geometric {
             position: fixed;
             width: 100vw;
@@ -111,27 +111,28 @@
             font-weight: 400;
         }
 
-        /* Profile Ring and Frame */
+        /* Profile Ring and Frame Layout */
         .profile-ring {
             width: 260px;
             height: 260px;
             border-radius: 50%;
             border: 6px solid var(--neon-green);
             box-shadow: 0 0 25px var(--neon-glow), inset 0 0 25px var(--neon-glow);
-            padding: 2px;
+            padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 2rem 0;
             background: #000;
             overflow: hidden;
+            position: relative;
         }
 
         .profile-img {
-            width: 105%;
-            height: 105%;
-            border-radius: 50%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+            display: block;
         }
 
         .user-name {
@@ -200,7 +201,7 @@
             color: var(--text-muted);
         }
 
-        /* Green Next Page Button from 17053.jpg */
+        /* Green Next Page Button */
         .next-btn {
             background-color: #2b9e09;
             color: var(--text-white);
@@ -382,9 +383,10 @@
             padding: 4rem 2rem;
             font-size: 0.75rem;
             color: var(--text-dark);
-            letter-spacing: 0.1em;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
             border-top: 1px solid rgba(255,255,255,0.02);
+            line-height: 1.8;
         }
     </style>
 </head>
@@ -407,8 +409,7 @@
         <h2 class="profile-title">My Profile</h2>
 
         <div class="profile-ring">
-            <!-- Referencing 16299.jpg verbatim for the user profile source -->
-            <img class="profile-img" src="16299.jpg" alt="Maneesh Kumar Jatav Photo">
+            <img class="profile-img" src="16299_2.jpg" alt="Maneesh Kumar Jatav Photo">
         </div>
 
         <div>
@@ -593,8 +594,9 @@
         </div>
     </div>
 
+    <!-- Cleaned Footer Text -->
     <footer>
-        &copy; 2026 Maneesh Kumar Jatav. Built Cleanly With尊 Semantic Architecture.
+        &copy; 2026 Maneesh Kumar Jatav.<br>Designed & Developed by Me.
     </footer>
 
 </body>
