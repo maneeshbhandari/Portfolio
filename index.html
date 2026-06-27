@@ -135,58 +135,6 @@
             display: block;
         }
 
-        /* Photo Upload Overlay Button */
-        .upload-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 35%;
-            background: rgba(0, 0, 0, 0.65);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .upload-overlay:hover {
-            background: rgba(0, 0, 0, 0.85);
-        }
-
-        /* Simple CSS drawn Camera Icon */
-        .camera-icon {
-            width: 22px;
-            height: 16px;
-            background-color: var(--text-white);
-            border-radius: 3px;
-            position: relative;
-        }
-
-        .camera-icon::before {
-            content: '';
-            position: absolute;
-            top: -4px;
-            left: 5px;
-            width: 12px;
-            height: 4px;
-            background-color: var(--text-white);
-            border-top-left-radius: 2px;
-            border-top-right-radius: 2px;
-        }
-
-        .camera-icon::after {
-            content: '';
-            position: absolute;
-            top: 3px;
-            left: 6px;
-            width: 10px;
-            height: 10px;
-            background-color: #000;
-            border: 2px solid var(--text-white);
-            border-radius: 50%;
-        }
-
         .user-name {
             font-size: 1.8rem;
             text-transform: uppercase;
@@ -459,12 +407,7 @@
         <h2 class="profile-title">My Profile</h2>
 
         <div class="profile-ring">
-            <img id="profile-img" class="profile-img" src="https://i.ibb.co/237mh86K/16299-2.jpg" alt="Maneesh Kumar Jatav Photo">
-            
-            <label for="photo-uploader" class="upload-overlay" title="Update Profile Photo">
-                <span class="camera-icon"></span>
-            </label>
-            <input type="file" id="photo-uploader" accept="image/*" style="display: none;">
+            <img class="profile-img" src="https://i.ibb.co/237mh86K/16299-2.jpg" alt="Maneesh Kumar Jatav Photo">
         </div>
 
         <div>
@@ -547,115 +490,3 @@
                     <div class="entry-title-row">
                         <h4 class="entry-title">Global Institute of Technology, Jaipur</h4>
                         <span class="entry-meta">2021 — 2025</span>
-                    </div>
-                    <p class="entry-sub">Bachelor of Technology (B.Tech) — Computer Science & Engineering</p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-title-row">
-                        <h4 class="entry-title">Bhaskar Vidhya Mandir Sr. Sec. School, Nadbai</h4>
-                        <span class="entry-meta">2018 — 2019</span>
-                    </div>
-                    <p class="entry-sub">12th Grade (Science Stream)</p>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="section-header">Contact</h3>
-                <ul class="contact-list" style="margin-bottom: 3rem;">
-                    <li>
-                        <strong>Location</strong>
-                        Jaipur, Rajasthan, India
-                    </li>
-                    <li>
-                        <strong>Phone</strong>
-                        +91 7023037548
-                    </li>
-                    <li>
-                        <strong>Email Address</strong>
-                        <a href="mailto:maneeshbhandari02@gmail.com">maneeshbhandari02@gmail.com</a>
-                    </li>
-                    <li>
-                        <strong>LinkedIn Profile</strong>
-                        <a href="https://linkedin.com/in/iammaneesh" target="_blank">iammaneesh</a>
-                    </li>
-                </ul>
-
-                <h3 class="section-header">Skills</h3>
-                
-                <div class="skills-group">
-                    <h4>Languages</h4>
-                    <div class="pill-box">
-                        <span class="pill">Python</span>
-                        <span class="pill">C++</span>
-                    </div>
-                </div>
-
-                <div class="skills-group">
-                    <h4>Frontend</h4>
-                    <div class="pill-box">
-                        <span class="pill">HTML5</span>
-                        <span class="pill">CSS3</span>
-                        <span class="pill">JavaScript</span>
-                        <span class="pill">React.js</span>
-                        <span class="pill">Angular</span>
-                    </div>
-                </div>
-
-                <div class="skills-group">
-                    <h4>Backend & DB</h4>
-                    <div class="pill-box">
-                        <span class="pill">Node.js</span>
-                        <span class="pill">Express.js</span>
-                        <span class="pill">PHP</span>
-                        <span class="pill">SQL</span>
-                        <span class="pill">MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="skills-group" style="margin-bottom: 3rem;">
-                    <h4>Tools</h4>
-                    <div class="pill-box">
-                        <span class="pill">Git</span>
-                        <span class="pill">GitHub</span>
-                        <span class="pill">VS Code</span>
-                    </div>
-                </div>
-
-                <h3 class="section-header">Key Competencies</h3>
-                <ul class="entry-bullets" style="margin-bottom: 3rem;">
-                    <li>Problem-Solving Architecture</li>
-                    <li>Collaborative Developer Dynamics</li>
-                    <li>Technical Document Drafting</li>
-                </ul>
-
-                <h3 class="section-header">Interests</h3>
-                <ul class="entry-bullets">
-                    <li>Reading Literature</li>
-                    <li>Competitive Cricket Analytics</li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2026 Maneesh Kumar Jatav.
-    </footer>
-
-    <script>
-        document.getElementById('photo-uploader').addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    // Smoothly updates the profile circle source URL
-                    document.getElementById('profile-img').src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
-
-</body>
-</html>
